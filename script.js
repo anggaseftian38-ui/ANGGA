@@ -45,7 +45,7 @@ setTimeout(() => {
 // ============================================
 // PORTFOLIO HERO TYPING EFFECT
 // ============================================
-const words = ["迪艾", "艾尺"];
+const words = ["DK", "RJ"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -79,7 +79,6 @@ function typePortfolioText() {
 
 // Start portfolio typing animation
 setTimeout(typePortfolioText, 5000);
-
 
 // ============================================
 // SMOOTH SCROLL FOR NAVIGATION LINKS
@@ -128,13 +127,6 @@ setTimeout(observeElements, 5000);
 // KEYBOARD SHORTCUTS
 // ============================================
 document.addEventListener('keydown', (e) => {
-    // Press 'T' to toggle theme
-    if (e.key === 't' || e.key === 'T') {
-        if (mainPortfolio.classList.contains('active')) {
-            themeToggle.click();
-        }
-    }
-    
     // Press 'Escape' to close any modals (if you add them later)
     if (e.key === 'Escape') {
         const modals = document.querySelectorAll('[data-modal]');
