@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimas Id - Developer & Designer</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <!-- Background Effects -->
+        <div class="background-effects">
+            <div class="gradient-blob gradient-blob-1"></div>
+            <div class="gradient-blob gradient-blob-2"></div>
+        </div>
+
+        <!-- Welcome Content -->
+        <div class="welcome-content">
+            <!-- Icons -->
+            <div class="icon-container">
+                <!-- Code Icon -->
+                <div class="icon-wrapper">
+                    <div class="icon-button">
+                        <div class="icon-glow"></div>
+                        <div class="icon-content">
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Icon -->
+                <div class="icon-wrapper">
+                    <div class="icon-button">
+                        <div class="icon-glow"></div>
+                        <div class="icon-content">
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Github Icon -->
+                <div class="icon-wrapper">
+                    <div class="icon-button">
+                        <div class="icon-glow"></div>
+                        <div class="icon-content">
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Welcome Text -->
+            <div class="welcome-text">
+                <div class="welcome-title">
+                    <div class="title-line">
+                        <span class="title-word light">Welcome</span>
+                        <span class="title-word light">To</span>
+                        <span class="title-word light">My</span>
+                    </div>
+                    <div class="title-line title-portfolio">
+                        <span class="title-word gradient">Portfolio</span>
+                        <span class="title-word gradient">Website</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Website Link -->
+            <div class="website-link-container">
+                <a href="https://sites.google.com/view/dimas-kurnia-s" class="website-link" target="_blank" rel="noopener noreferrer">
+                    <div class="website-link-glow"></div>
+                    <div class="website-link-content">
+                        <svg class="globe-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span class="website-text" id="websiteText"></span>
+                        <span class="typing-cursor"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Portfolio Content -->
+    <div class="main-portfolio" id="mainPortfolio">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">MIRAGE | STRIKETROUGH</div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <!-- Left Column -->
+                <div class="hero-content" data-aos="fade-right" data-aos-delay="200">
+                    <!-- Status Badge -->
+                    <div class="status-badge" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="badge-wrapper">
+                            <div class="badge-glow"></div>
+                            <div class="badge-content">
+                                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                                </svg>
+                                <span class="badge-text">Ready to Innovate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Title -->
+                    <div data-aos="fade-up" data-aos-delay="600">
+                        <h1 class="hero-title">
+                            <div class="title-line-hero">
+                                <div class="title-glow"></div>
+                                <span class="title-text"style="font-family: 'Segoe UI', sans-serif;">DIMAS ID</span>
+                            </div>
+                            <br>
+                            <div class="title-line-hero">
+                                <div class="title-glow"></div>
+                                <span class="title-gradient" style="font-family: 'DKfont', sans-serif;">DK</span>
+                            </div>
+                        </h1>
+                    </div>
+
+                    <!-- Typing Effect -->
+                    <div class="typing-container" data-aos="fade-up" data-aos-delay="800">
+                        <h2 class="typewriter-text">
+                            <span id="typingText"></span>
+                            <span class="typing-cursor-hero">|</span>
+                        </h2>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="1000">
+                        Create a web with Tailwind css and use Github pages, vercel.
+                    </p>
+
+                    <!-- Tech Stack -->
+                    <div class="tech-stack" data-aos="fade-up" data-aos-delay="1200">
+                        <div class="tech-item">React</div>
+                        <div class="tech-item">Javascript</div>
+                        <div class="tech-item">Node.js</div>
+                        <div class="tech-item">Tailwind</div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="cta-buttons" data-aos="fade-up" data-aos-delay="1400">
+                        <a href="#" class="cta-button">
+                            <div class="cta-button-glow"></div>
+                            <div class="cta-button-content">
+                                <div class="cta-button-bg"></div>
+                                <span class="cta-button-text">Projects</span>
+                                <svg class="cta-button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#Contact" class="cta-button contact">
+                            <div class="cta-button-glow"></div>
+                            <div class="cta-button-content">
+                                <div class="cta-button-bg"></div>
+                                <span class="cta-button-text">Contact</span>
+                                <svg class="cta-button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="1600">
+                        <a href="https://github.com/DIMAS-ID829" class="social-link" target="_blank">
+                            <div class="social-link-glow"></div>
+                            <div class="social-link-content">
+                                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/@Dimas_69" class="social-link" target="_blank">
+                            <div class="social-link-glow"></div>
+                            <div class="social-link-content">
+                                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/teatime_innit/" class="social-link" target="_blank">
+                            <div class="social-link-glow"></div>
+                            <div class="social-link-content">
+                                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column - Avatar/Animation -->
+                <div class="hero-avatar" data-aos="fade-left" data-aos-delay="600">
+                    <div class="avatar-glow-bg"></div>
+                    <div class="avatar-container">
+                        <div class="lottie-placeholder">
+                            <img src="https://raw.githubusercontent.com/DIMAS-ID829/portofolio/main/profile.webp" alt="Dimas ID">
+                        </div>
+                    </div>
+                    <div class="avatar-pulse"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="About">
+            <div class="about-container">
+                <!-- Header -->
+                <div class="about-header">
+                    <div class="about-title-wrapper" data-aos="zoom-in-up" data-aos-duration="600">
+                        <h2 class="about-title">About Me</h2>
+                    </div>
+                    <p class="about-subtitle" data-aos="zoom-in-up" data-aos-duration="800">
+                        <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                        </svg>
+                        Transforming ideas into digital experiences
+                        <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                        </svg>
+                    </p>
+                </div>
+
+                <!-- About Content Grid -->
+                <div class="about-grid">
+                    <!-- Left Content -->
+                    <div class="about-content">
+                        <h2 class="about-name" data-aos="fade-right" data-aos-duration="1000">
+                            <span class="gradient-text">Hello, I'm</span>
+                            <span class="name-text" data-aos="fade-right" data-aos-duration="1300">Dimas Kurnia Sandi</span>
+                        </h2>
+
+                        <p class="about-description" data-aos="fade-right" data-aos-duration="1500">
+                            Seorang Siswa SMK yang bersemangat dalam dunia pengembangan web dan teknologi. Dengan pengalaman lebih dari 3 Bulan, saya telah mengasah keterampilan saya dalam berbagai bahasa pemrograman dan kerangka kerja. Saya berkomitmen untuk terus belajar dan berkembang, serta berkontribusi pada proyek-proyek inovatif yang dapat memberikan dampak positif.
+                        </p>
+
+                        <!-- Quote Box -->
+                        <div class="quote-box" data-aos="fade-up" data-aos-duration="1700">
+                            <div class="quote-orb quote-orb-1"></div>
+                            <div class="quote-orb quote-orb-2"></div>
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                            </svg>
+                            <blockquote class="quote-text">
+                                "JUST DO IT."
+                            </blockquote>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="about-buttons">
+                            <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" target="_blank" class="about-btn about-btn-primary" data-aos="fade-up" data-aos-duration="800">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                My Sites
+                            </a>
+                            <a href="#Portofolio" class="about-btn about-btn-secondary" data-aos="fade-up" data-aos-duration="1000">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                                My Projects
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Profile Image -->
+                    <div class="about-profile" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="profile-gradient-bg"></div>
+                        <div class="profile-image-wrapper">
+                            
+                            <div class="profile-overlay"></div>
+                            <div class="profile-overlay-hover"></div>
+                            <img src="https://raw.githubusercontent.com/DIMAS-ID829/portofolio/main/DBDsymbol.png
+" alt="Profile" class="profile-image">
+                            <div class="profile-shine"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                <a href="#Portofolio" class="stats-link">
+                    <div class="stats-grid">
+                        <!-- Stat Card 1 -->
+                        <div class="stat-card" data-aos="fade-right" data-aos-duration="1300">
+                            <div class="stat-bg-gradient stat-bg-1"></div>
+                            <div class="stat-content">
+                                <div class="stat-header">
+                                    <div class="stat-icon-wrapper">
+                                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="16 18 22 12 16 6"></polyline>
+                                            <polyline points="8 6 2 12 8 18"></polyline>
+                                        </svg>
+                                    </div>
+                                    <span class="stat-value" data-aos="fade-up-left" data-aos-duration="1500">10</span>
+                                </div>
+                                <div class="stat-info">
+                                    <p class="stat-label" data-aos="fade-up" data-aos-duration="800">TOTAL PROJECTS</p>
+                                    <div class="stat-footer">
+                                        <p class="stat-description" data-aos="fade-up" data-aos-duration="1000">Innovative web solutions crafted</p>
+                                        <svg class="stat-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stat Card 2 -->
+                        <div class="stat-card" data-aos="fade-up" data-aos-duration="1300">
+                            <div class="stat-bg-gradient stat-bg-2"></div>
+                            <div class="stat-content">
+                                <div class="stat-header">
+                                    <div class="stat-icon-wrapper">
+                                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="8" r="7"></circle>
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                        </svg>
+                                    </div>
+                                    <span class="stat-value" data-aos="fade-up-left" data-aos-duration="1500">2</span>
+                                </div>
+                                <div class="stat-info">
+                                    <p class="stat-label" data-aos="fade-up" data-aos-duration="800">CERTIFICATES</p>
+                                    <div class="stat-footer">
+                                        <p class="stat-description" data-aos="fade-up" data-aos-duration="1000">Professional skills validated</p>
+                                        <svg class="stat-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stat Card 3 -->
+                        <div class="stat-card" data-aos="fade-left" data-aos-duration="1300">
+                            <div class="stat-bg-gradient stat-bg-3"></div>
+                            <div class="stat-content">
+                                <div class="stat-header">
+                                    <div class="stat-icon-wrapper">
+                                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="stat-value" data-aos="fade-up-left" data-aos-duration="1500">1</span>
+                                </div>
+                                <div class="stat-info">
+                                    <p class="stat-label" data-aos="fade-up" data-aos-duration="800">YEARS OF EXPERIENCE</p>
+                                    <div class="stat-footer">
+                                        <p class="stat-description" data-aos="fade-up" data-aos-duration="1000">Continuous learning journey</p>
+                                        <svg class="stat-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section" id="Portofolio">
+            <div class="portfolio-container">
+                <!-- Portfolio Header -->
+                <div class="portfolio-header" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="portfolio-title">Portfolio Showcase</h2>
+                    <p class="portfolio-subtitle">
+                        Explore my journey through projects, certifications, and technical expertise. 
+                        Each section represents a milestone in my continuous learning path.
+                    </p>
+                </div>
+
+                <!-- Tabs Navigation -->
+                <div class="portfolio-tabs">
+                    <div class="tabs-container">
+                        <button class="tab-button active" data-tab="projects">
+                            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            Projects
+                        </button>
+                        <button class="tab-button" data-tab="certificates">
+                            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            Certificates
+                        </button>
+                        <button class="tab-button" data-tab="techstack">
+                            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                            Tech Stack
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tab-content active" id="projects">
+                    <!-- Tech Categories -->
+                    <div class="tech-categories">
+                        <div class="category-card" data-aos="fade-up-right" data-aos-duration="1000">
+                            <div class="category-image">
+                                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80" alt="Web Development">
+                                <div class="category-overlay"></div>
+                            </div>
+                            <div class="category-content">
+                                <h3 class="category-title">Web Development</h3>
+                                <p class="category-description">Modern web technologies and frameworks for building responsive applications.</p>
+                            </div>
+                        </div>
+                        <div class="category-card" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="category-image">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Backend Development">
+                                <div class="category-overlay"></div>
+                            </div>
+                            <div class="category-content">
+                                <h3 class="category-title">Backend Development</h3>
+                                <p class="category-description">Scalable server-side solutions with modern frameworks and databases.</p>
+                            </div>
+                        </div>
+                        <div class="category-card" data-aos="fade-up-left" data-aos-duration="1000">
+                            <div class="category-image">
+                                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800&q=80" alt="Deployment">
+                                <div class="category-overlay"></div>
+                            </div>
+                            <div class="category-content">
+                                <h3 class="category-title">Deployment & Hosting</h3>
+                                <p class="category-description">Professional deployment solutions and continuous integration.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projects Grid - You can add your projects here -->
+                    <div class="projects-grid">
+                    </div>
+                </div>
+
+                <div class="tab-content" id="certificates">
+                    <!-- Certificate Categories -->
+                    <div class="tech-categories">
+                        <div class="category-card certificate-card" data-aos="fade-up-right" data-aos-duration="1000">
+                            <div class="category-image category-image-large">
+                                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80" alt="Professional Certifications">
+                                <div class="category-overlay"></div>
+                            </div>
+                            <div class="category-content category-content-large">
+                                <h3 class="category-title">Professional Certifications</h3>
+                                <p class="category-description">Industry-recognized certifications demonstrating expertise and professional competency in various technical domains.</p>
+                            </div>
+                        </div>
+                        <div class="category-card certificate-card" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="category-image category-image-large">
+                                <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80" alt="Course Completions">
+                                <div class="category-overlay"></div>
+                            </div>
+                            <div class="category-content category-content-large">
+                                <h3 class="category-title">Course Completions</h3>
+                                <p class="category-description">Comprehensive online courses and training programs completed from leading educational platforms and institutions.</p>
+                            </div>
+                        </div>
+                        <div class="category-card certificate-card" data-aos="fade-up-left" data-aos-duration="1000">
+                            <div class="category-image category-image-large">
+                                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80" alt="Workshops">
+                                <div class="category-overlay"></div>
+                            </div>
+                            <div class="category-content category-content-large">
+                                <h3 class="category-title">Workshop & Seminars</h3>
+                                <p class="category-description">Active participation in technical workshops, bootcamps, and professional development seminars.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificates Grid -->
+                    <div class="certificates-grid">
+                    </div>
+                </div>
+
+                <div class="tab-content" id="techstack">
+                    <!-- Tech Stack Grid -->
+                    <div class="techstack-grid">
+                        <div class="tech-item" data-aos="fade-up-right" data-aos-duration="1000">
+                            <div class="tech-icon-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>HTML</span>
+                        </div>
+                        <div class="tech-item" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="tech-icon-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <span>CSS</span>
+                        </div>
+                        <div class="tech-item" data-aos="fade-up-left" data-aos-duration="1000">
+                            <div class="tech-icon-placeholder">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                                </svg>
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item" data-aos="fade-up-right" data-aos-duration="1000">
+                            <div class="tech-icon-placeholder">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                                </svg>
+                            </div>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="tech-item" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="tech-icon-placeholder">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/>
+                                </svg>
+                            </div>
+                            <span>ReactJS</span>
+                        </div>
+                        <div class="tech-item" data-aos="fade-up-left" data-aos-duration="1000">
+                            <div class="tech-icon-placeholder">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/>
+                                </svg>
+                            </div>
+                            <span>Node JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
