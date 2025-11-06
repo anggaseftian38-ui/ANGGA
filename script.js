@@ -45,7 +45,7 @@ setTimeout(() => {
 // ============================================
 // PORTFOLIO HERO TYPING EFFECT
 // ============================================
-const words = ["DK", "RJ"];
+const words = ["DK", "艾尺"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
